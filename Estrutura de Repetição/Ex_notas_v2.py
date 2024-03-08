@@ -17,7 +17,6 @@ while True:
     if nota<menor_nota:
         menor_nota=nota
   
-
 print("Quantidade de alunos: ", qtd_alunos)
 print("Maior nota: ", maior_nota)
 print("Menor nota: ", menor_nota)
