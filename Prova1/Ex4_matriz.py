@@ -26,11 +26,20 @@ for i in range(N):
 
 matriz_multiplicada=matriz #shallow copy (cópia rasa) 
 
-for i in range(N):
-    for j in range(M):
-        matriz_multiplicada[i][j] = matriz[i][j]*maior_valor
+# for i in range(N):
+#     for j in range(M):
+#         matriz_multiplicada[i][j] = matriz[i][j]*maior_valor
+
+# Ou ASSIM:
+# matriz_multiplicada=[]
+# for linha in matriz:
+#         nova_linha=[]
+#         for elemento in linha:
+#              nova_linha.append(elemento * maior_valor)
+#         matriz_multiplicada.append(nova_linha)
 
 
+print(matriz_multiplicada)
 print("Matriz multiplicada")
 for i in range(N):
     for j in range(M):

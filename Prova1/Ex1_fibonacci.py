@@ -19,3 +19,4 @@ for i in range(3,N+1):
     print(c)
     a=b
     b=c
+
