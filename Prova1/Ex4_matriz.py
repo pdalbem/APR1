@@ -24,19 +24,21 @@ for i in range(N):
         print(matriz[i][j], end=' ')
     print() 
 
-matriz_multiplicada=matriz #shallow copy (cópia rasa) 
+
+# solução abaixo realiza uma cópia rasa, alterando a matriz original também
+# matriz_multiplicada=matriz #shallow copy (cópia rasa) 
 
 # for i in range(N):
 #     for j in range(M):
 #         matriz_multiplicada[i][j] = matriz[i][j]*maior_valor
 
-# Ou ASSIM:
-# matriz_multiplicada=[]
-# for linha in matriz:
-#         nova_linha=[]
-#         for elemento in linha:
-#              nova_linha.append(elemento * maior_valor)
-#         matriz_multiplicada.append(nova_linha)
+#Solução melhor. Preserva matriz original
+matriz_multiplicada=[]
+for linha in matriz:
+        nova_linha=[]
+        for elemento in linha:
+             nova_linha.append(elemento * maior_valor)
+        matriz_multiplicada.append(nova_linha)
 
 
 print(matriz_multiplicada)

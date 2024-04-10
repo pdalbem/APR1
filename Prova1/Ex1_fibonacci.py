@@ -20,3 +20,12 @@ for i in range(3,N+1):
     a=b
     b=c
 
+#solução com while
+# i=3
+# while i<=N:
+#     c=a+b
+#     print(c)
+#     a=b
+#     b=c
+#     i=i+1
+
