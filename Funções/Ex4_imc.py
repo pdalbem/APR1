@@ -28,10 +28,13 @@ def mostrar_classificacao(imc):
     else:
         print("Obesidade III")        
 
-opcao='s'
-while opcao.upper()=='S':
-    peso=ler_peso()
-    altura = ler_altura()
-    imc=calcular_imc(peso,altura)
-    mostrar_classificacao(imc)
-    opcao=input("Executar com outros valores? (s/n)")
+def main():
+    opcao='s'
+    while opcao.upper()=='S':
+        peso=ler_peso()
+        altura = ler_altura()
+        imc=calcular_imc(peso,altura)
+        mostrar_classificacao(imc)
+        opcao=input("Executar com outros valores? (s/n)")
+
+main()

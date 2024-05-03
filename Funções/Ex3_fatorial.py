@@ -4,8 +4,11 @@ def fatorial(num):
         fat=fat*i
     return fat
 
-num=int(input("Digite um número: "))
-while num>0:
-    resultado=fatorial(num)
-    print(f"O fatorial de {num} é {resultado}")    
+def main():
     num=int(input("Digite um número: "))
+    while num>0:
+        resultado=fatorial(num)
+        print(f"O fatorial de {num} é {resultado}")    
+        num=int(input("Digite um número: "))
+
+main()

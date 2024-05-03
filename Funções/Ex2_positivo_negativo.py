@@ -15,6 +15,9 @@ def mostrar_mensagem(result):
     else:
         print(f"Número é {num}")
 
-num=int(input("Digite o número: "))    
-resultado=positivo_negativo(num)
-mostrar_mensagem(resultado)
+def main():
+    num=int(input("Digite o número: "))    
+    resultado=positivo_negativo(num)
+    mostrar_mensagem(resultado)
+
+main()    
