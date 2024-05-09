@@ -30,7 +30,7 @@ def mostrar_lista(lista):
         print(num)
 
 def main():
-    N=int(input("Digite o tamnho da lista: "))
+    N=int(input("Digite o tamanho da lista: "))
     lista=criar_lista(N)
     media=calcular_media(lista)
     print(f"Média dos elementos: {media:.2f} ")
