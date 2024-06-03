@@ -1,11 +1,5 @@
-import os
-
-def existe_arquivo(arq):
-	return os.path.exists(arq)
-		
-def criar_arquivo(arq):
-	a=open(arq,'w')
-	a.close()
+from lib.arquivo import *
+from lib.tela import *
 
 def gravar_contato(arq,tupla):
 	a=open(arq,'a')
@@ -29,7 +23,7 @@ def mostrar_contatos(dicio):
          print("Email: ", v[0])
          print("Telefone: ", v[1]) 
    
-    input("Pressione qualquer tecla para continuar")  
+    input("Pressione <enter> para continuar")  
 
 
 def pesquisar_contato(dicio):
@@ -46,26 +40,7 @@ def pesquisar_contato(dicio):
     if achou==False:
         print("Contato não cadastrado") 
 
-    input("Pressione qualquer tecla para continuar")      
-
-
-def limpar_tela():
-     os.system('cls' if os.name == 'nt' else 'clear')
-
-def exibir_cabecalho(texto):
-    print("-" * 30)
-    print(texto.center(30))
-    print("-" * 30)
-
-def exibir_menu():
-    limpar_tela()
-    exibir_cabecalho("MENU")
-
-    itens_menu=["Cadastrar contato", "Listar contatos", "Pesquisar contato"]
-    for i in range(len(itens_menu)):
-         print(f"{i+1} - {itens_menu[i]}")
-    print("0 - Sair") 
-    print("-" * 30)
+    input("Pressione <enter> para continuar")      
 
 
 def carregar_contatos(arq):
